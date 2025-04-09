@@ -7,7 +7,11 @@ const IMAGES = {
     heart: "/img/heart.png",
     profile: "/img/Profile.png",
     setting: "/img/setting.png",
-    signOut: "/img/sign-out.png"
+    signOut: "/img/sign-out.png",
+    search: "/img/Search.png",
+    mode: "/img/mode.png",
+    moon: "/img/moon.png",
+    bell: "/img/bell.png"
 }
 
 export default IMAGES;

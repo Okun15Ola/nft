@@ -1,18 +1,20 @@
-import './App.css'
-import Header from './components/Header/Header'
-import SideMenu from './components/SideMenu/SideMenu'
+import './App.css';
+import Header from './components/Header/Header';
+import SideMenu from './components/SideMenu/SideMenu';
 
 const App = () => {
   return (
-    <div className='bg-[#1D1932] min-h-screen flex'>
+    <div className="min-h-screen flex bg-[#1D1932] text-black transition-colors duration-300">
+      {/* Side Menu */}
       <SideMenu />
       
-      <div className="bg-[#1D1932] flex-1 text-white p-4">
+      <div className="flex-1 p-4">
+        {/* Header */}
         <Header />
-
+        {/* You can add more components/content here */}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
