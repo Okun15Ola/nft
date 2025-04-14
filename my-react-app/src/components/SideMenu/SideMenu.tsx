@@ -1,5 +1,6 @@
 import IMAGES from "../../constants/image";
 
+
 const SideMenu = () => {
   return (
     <div className="flex h-screen relative">
@@ -39,7 +40,7 @@ const SideMenu = () => {
 
       {/* Main Content */}
       <div className="flex-grow bg-white">
-        {/* Main content goes here */}
+      
       </div>
     </div>
   );

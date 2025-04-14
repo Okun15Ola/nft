@@ -11,7 +11,9 @@ const IMAGES = {
     search: "/img/Search.png",
     mode: "/img/mode.png",
     moon: "/img/moon.png",
-    bell: "/img/bell.png"
+    bell: "/img/bell.png",
+    discover: "/img/Discover.png",
+    nft: "/img/NFT.png"
 }
 
 export default IMAGES;

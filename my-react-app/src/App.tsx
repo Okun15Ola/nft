@@ -1,6 +1,8 @@
 import './App.css';
 import Header from './components/Header/Header';
+import MainContent from './components/MainContent/MainContent';
 import SideMenu from './components/SideMenu/SideMenu';
+
 
 const App = () => {
   return (
@@ -12,7 +14,9 @@ const App = () => {
         {/* Header */}
         <Header />
         {/* You can add more components/content here */}
+        <MainContent />
       </div>
+      
     </div>
   );
 };
