@@ -1,12 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import IMAGES from '../../constants/image';
 
 const Header = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const testMode = () =>{
-    alert('Hi, Im working')
-  }
 
 
   return (

@@ -29,7 +29,7 @@ const MainContent = () => {
         {/* NFT Section */}
         <div className="flex justify-center w-full">
           <div className='relative flex flex-col md:flex-row gap-4 items-center bg-[#1D1932] px-4 py-8 rounded-2xl w-[90%] md:w-full'>
-            <img src={IMAGES.nft} alt="NFT" className="w-60 h-36 rounded-2xl object-cover" />
+            <img src={IMAGES.nft} alt="NFT" className="w-96 md:w-60 md:h-48 rounded-2xl object-cover" />
             <div className='flex flex-col justify-center relative z-10'>
               <div className='flex items-center gap-4'>
                 <div className="bg-white dark:bg-gray-800 rounded-full w-[50px] h-[50px] overflow-hidden" />
@@ -56,8 +56,15 @@ const MainContent = () => {
       </div>
 
       {/* Trending Bids Section */}
-      <div className='mt-7 font-bold'>
-        <h2 className='text-white'>Trending Bids</h2>
+      <div className='mt-7 font-bold mb-10 px-4'>
+        <div className='flex md:flex-row justify-between items-center'>
+         <h2 className='text-white'>Trending Bids</h2>
+         <div className='flex flex-row gap-2 text-white'>
+          <button className='bg-[#6F4FF2] px-4  rounded-md'>All</button>
+          <button>Art Work</button>
+          <button>Book</button>
+         </div>
+        </div>
       </div>
     </div>
   )
