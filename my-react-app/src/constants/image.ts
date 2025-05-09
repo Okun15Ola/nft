@@ -13,7 +13,8 @@ const IMAGES = {
     moon: "/img/moon.png",
     bell: "/img/bell.png",
     discover: "/img/Discover.png",
-    nft: "/img/NFT.png"
+    nft: "/img/NFT.png",
+    nft1: "/img/nft-img1.png",
 }
 
 export default IMAGES;

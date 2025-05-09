@@ -1,7 +1,7 @@
 import React from 'react'
 import IMAGES from '../../constants/image'
 import AuctionCards from '../AuctionCard/AuctionCards'
-import auctions from '../AuctionCard/AuctionData'
+import { auctions, auctions2 } from '../AuctionCard/AuctionData'
 
 const MainContent = () => {
   return (
@@ -69,9 +69,12 @@ const MainContent = () => {
         </div>
       </div>
 
-      <div className=''>
+      <div className='flex flex-col px-8 md:px-4 gap-2 md:flex-row justify-start flex-wrap'>
         <AuctionCards auctions={auctions} />
+        <AuctionCards auctions={auctions2} />
+        <AuctionCards auctions={auctions2} />
         <AuctionCards auctions={auctions} />
+
       </div>
 
     </div>

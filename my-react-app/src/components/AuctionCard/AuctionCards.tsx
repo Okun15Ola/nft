@@ -1,11 +1,14 @@
 import React from "react";
 
+
 type Auction = {
     id: number;
     title: string;
     image: string;
     time?: string;
     bid?: string;
+    auctionTime?: string;
+    currentBid?: string;
 }
 
 type Props = {
@@ -15,15 +18,20 @@ type Props = {
 
 const AuctionCards: React.FC<Props> = ({ auctions }) => {
   return (
-    <div className="auction-cards flex-col flex md:flex-row">
+    <div className="w-[290px] rounded-lg p-4">
       {auctions.map((auction) => (
-        <div key={auction.id} className="auction-card flex-row border rounded-lg overflow-hidden shadow-md">
-          <img src={auction.image} alt={auction.title} className="w-full h-48 object-cover" />
-          <div className="auction-card-content p-4">
-            <h4 className="text-lg font-semibold mb-2">{auction.title}</h4>
-            <div className="flex justify-between text-sm text-gray-600">
-              <p>{auction.time || "Auction Time"}</p>
-              <p>{auction.bid || "Current Bid"}</p>
+        <div key={auction.id} className="bg-[#1D1932] rounded-lg shadow-md shadow-purple-900/20 flex flex-col">
+          <img src={auction.image} alt={auction.title} className="" />
+          <div className="text-white">
+            <h4 className="text-xl font-bold">{auction.title}</h4>
+            <div className="flex flex-row justify-between">
+              <p>Auction Time</p>
+              <p>Current Bid</p>
+            </div>
+            <p className="flex justify-end text-[#6F4FF2]">{auction.bid}</p>
+            <div className="flex flex-row justify-between">
+              <p>{auction.auctionTime || "Auction Time"}</p>
+              <p>{auction.currentBid || "Current Bid"}</p>
             </div>
           </div>
         </div>
