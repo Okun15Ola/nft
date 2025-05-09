@@ -1,5 +1,7 @@
 import React from 'react'
 import IMAGES from '../../constants/image'
+import AuctionCards from '../AuctionCard/AuctionCards'
+import auctions from '../AuctionCard/AuctionData'
 
 const MainContent = () => {
   return (
@@ -66,6 +68,12 @@ const MainContent = () => {
          </div>
         </div>
       </div>
+
+      <div className=''>
+        <AuctionCards auctions={auctions} />
+        <AuctionCards auctions={auctions} />
+      </div>
+
     </div>
   )
 }

@@ -2,8 +2,6 @@ import React from 'react';
 import IMAGES from '../../constants/image';
 
 const Header = () => {
-
-
   return (
     <main className="container mx-auto md:px-4">
       <div>
@@ -23,7 +21,6 @@ const Header = () => {
               src={IMAGES.mode}
               alt="Mode"
               className="w-6 h-6 cursor-pointer"
-              onClick={testMode}
               title="Toggle Theme"
             />
             <img src={IMAGES.bell} alt="Bell" className="w-6 h-6" />
