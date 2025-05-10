@@ -2,14 +2,14 @@ import IMAGES from "../../constants/image";
 
 const SideMenu = () => {
   return (
-    <div className="flex h-screen relative">
-      {/* Sidebar - Hidden on mobile */}
-      <div className="hidden md:flex flex-col justify-between w-24 lg:w-28 py-6 bg-[#1D1932]">
+    <>
+      {/* Sidebar - Hidden on mobile, Fixed on desktop */}
+      <div className="hidden md:fixed md:flex md:flex-col justify-between h-screen w-24 lg:w-28 py-6 bg-[#1D1932]">
         {/* Logo at Top */}
         <div className="flex justify-center mb-6">
           <img src={IMAGES.logo} alt="Logo" />
         </div>
-        
+
         <div className="flex flex-col items-center gap-6">
           <img src={IMAGES.dashboard} alt="Dashboard" />
           <img src={IMAGES.bid} alt="Bid" />
@@ -24,6 +24,7 @@ const SideMenu = () => {
         </div>
       </div>
 
+      {/* Mobile Bottom Menu */}
       <div className="md:hidden fixed bottom-0 left-0 w-full bg-[#1D1932] flex justify-around items-center py-3 z-50">
         <img src={IMAGES.dashboard} alt="Dashboard" className="w-6 h-6" />
         <img src={IMAGES.bid} alt="Bid" className="w-6 h-6" />
@@ -33,7 +34,7 @@ const SideMenu = () => {
         <img src={IMAGES.setting} alt="Setting" className="w-6 h-6" />
         <img src={IMAGES.signOut} alt="Sign-out" className="w-6 h-6" />
       </div>
-    </div>
+    </>
   );
 };
 

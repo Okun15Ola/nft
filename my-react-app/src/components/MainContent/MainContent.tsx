@@ -5,7 +5,7 @@ import { auctions, auctions2 } from '../AuctionCard/AuctionData'
 
 const MainContent = () => {
   return (
-    <div className='mt-6 md:px-4'>
+    <div className='mt-6 md:px-4 md:ml-24 lg:ml-28 h-screen overflow-y-auto'>
       <div className='flex flex-col items-center md:items-stretch md:flex-row gap-10'>
 
         {/* Discover Section */}
@@ -58,7 +58,7 @@ const MainContent = () => {
       </div>
 
       {/* Trending Bids Section */}
-      <div className='mt-7 font-bold mb-10 px-4'>
+      <div className='mt-7 font-bold mb-6 px-4'>
         <div className='flex md:flex-row justify-between items-center'>
          <h2 className='text-white'>Trending Bids</h2>
          <div className='flex flex-row gap-2 text-white'>
@@ -69,7 +69,7 @@ const MainContent = () => {
         </div>
       </div>
 
-      <div className='flex flex-col px-8 md:px-4 gap-2 md:flex-row justify-start flex-wrap'>
+      <div className='flex flex-col px-8 md:px-0 gap-2 md:flex-row justify-start'>
         <AuctionCards auctions={auctions} />
         <AuctionCards auctions={auctions2} />
         <AuctionCards auctions={auctions2} />

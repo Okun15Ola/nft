@@ -13,7 +13,7 @@ export const auctions = [
     export const auctions2= [
         {
             id: 2,
-            title: "digital art",
+            title: "Digital art",
             image: IMAGES.nft1,
             bid: "0.09ETH",
             auctionTime: "2h 1m 50s",

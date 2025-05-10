@@ -3,7 +3,7 @@ import IMAGES from '../../constants/image';
 
 const Header = () => {
   return (
-    <main className="container mx-auto md:px-4">
+    <main className="container pl-4 md:pl-32 overflow-hidden">
       <div>
         <div className="flex md:flex-row justify-between">
           <div className="flex flex-row pl-3 gap-2 bg-[#19152e] rounded-[10px] w-36 md:w-72 h-[50px] items-center">
